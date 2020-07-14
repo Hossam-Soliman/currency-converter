@@ -164,7 +164,7 @@ body {
   }
   .body button {
     height: 40px;
-    padding: 7px;
+    padding: 4px;
     margin-top: 15px;
     margin-bottom: 8px;
   }
@@ -174,7 +174,7 @@ body {
   }
 
   .values h1 {
-    font-size: 42px;
+    font-size: 25px;
   }
 
   .body-form label {

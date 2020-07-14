@@ -135,10 +135,10 @@ const RatesConverter = () => {
             )}
             <div className="values">
               <h1>{result && Number(result).toFixed(4)}</h1>
-              {result && <h4> {secondCurrency}</h4>}
+              {result && <h5> {secondCurrency}</h5>}
             </div>
             {result && (
-              <h2 style={{ color: "#fff" }}>
+              <h2 style={{ color: "#fff", fontSize: 20, marginTop: 10 }}>
                 1 {firstCurrency} = {Number(rate).toFixed(4)} {secondCurrency}
               </h2>
             )}
