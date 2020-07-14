@@ -190,7 +190,7 @@ body {
   }
 }
 
-@media (max-width: 485px) {
+@media (max-width: 490px) {
   .navbar ul {
     display: flex;
     flex-direction: column;
@@ -198,9 +198,17 @@ body {
     height: 100%;
     justify-content: space-around;
   }
+  .navbar .nav-info li {
+    font-size: 11px;
+  }
 
   .navbar .container {
     height: 150px;
+  }
+
+  .body .last-updated {
+    margin-top: 0 !important;
+    font-size: 15px;
   }
 }
 

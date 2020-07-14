@@ -14,7 +14,7 @@ const RatesConverter = () => {
   const [rate, setRate] = useState();
   const [result, setResult] = useState();
 
-  const screenWidth = window.screen.width <= 770;
+  const [isTablet, setIsTablet] = useState(window.screen.width <= 770);
 
   useEffect(() => {
     axios.get("https://api.exchangeratesapi.io/latest").then((res) => {
@@ -35,6 +35,12 @@ const RatesConverter = () => {
         setRate(1);
       });
   }, [firstCurrency, secondCurrency]);
+
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      setIsTablet(window.screen.width <= 770);
+    });
+  }, []);
 
   const getRate = (e) => {
     e.preventDefault();
@@ -84,7 +90,10 @@ const RatesConverter = () => {
       <div className="body" style={{ backgroundImage: "url(" + cover + ")" }}>
         <Navbar />
         <div className="container">
-          <h5 style={{ textAlign: "left", color: "#fff", marginTop: 50 }}>
+          <h5
+            className="last-updated"
+            style={{ textAlign: "left", color: "#fff", marginTop: 50 }}
+          >
             Last updated: {date}
           </h5>
           <div className="convert-area">
@@ -133,7 +142,7 @@ const RatesConverter = () => {
                 1 {firstCurrency} = {Number(rate).toFixed(4)} {secondCurrency}
               </h2>
             )}
-            {!screenWidth && (
+            {!isTablet && (
               <p className="note">
                 All figures are live mid-market rates, which are not available
                 to consumers and are for informational purposes only.
