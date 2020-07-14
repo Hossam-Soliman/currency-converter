@@ -1,0 +1,217 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.input {
+  width: 200px;
+  padding: 12px;
+  border-style: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  border: 1px solid black;
+  margin: 0 11px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 20px;
+  color: #1e3b82;
+  outline-color: #1e3b82;
+}
+
+.body {
+  border-bottom: 5px solid #fcb813;
+}
+/* 
+.body img{
+  width: 100%;
+  height: 87%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -5;
+  border-bottom: 5px solid #FCB813
+} */
+
+.body select {
+  padding: 12px;
+  margin: 0 11px;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 300px;
+  font-weight: bold;
+  display: inline-block;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 20px;
+  color: #1e3b82;
+  outline-color: #1e3b82;
+}
+
+.body button {
+  padding: 10px;
+  border-radius: 10px;
+  width: 70px;
+  height: 55px;
+  text-align: center;
+  border-style: none;
+  background-color: #fcb813;
+}
+
+.body .convert-area {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-direction: column;
+  background-color: #1e3b82;
+  height: 446px;
+  position: relative;
+  margin: 0px auto;
+  z-index: 10;
+  margin-top: 15px;
+  padding: 50px 30px 30px 20px;
+  border-radius: 10px;
+  opacity: 0.95;
+}
+
+.body-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  color: white;
+}
+
+.body-form label {
+  margin-top: 10px;
+  display: block;
+  font-family: "Noto Sans JP", sans-serif;
+  align-self: flex-start;
+}
+
+.values {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #fff;
+}
+
+.values h1 {
+  font-size: 80px;
+  margin: -5px 0;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.convert-area .note {
+  font-size: 14px;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #fff;
+  width: 600px;
+  margin: 0px auto;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.navbar ul {
+  list-style: none;
+  color: #fff;
+  font-size: 18px;
+}
+.navbar .nav-info .login {
+  border: 2px solid #80f0ff;
+  border-radius: 20px;
+  padding: 4px 11px;
+  color: #80f0ff;
+}
+
+.navbar .nav-info li {
+  display: inline;
+  margin-left: 20px;
+}
+
+@media (max-width: 990px) {
+  .navbar ul {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 770px) {
+  .navbar .nav-info li {
+    display: inline;
+    margin-left: 10px;
+    font-size: 11px;
+  }
+
+  .body-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input {
+    padding: 4px;
+    width: 150px;
+  }
+
+  .body select {
+    padding: 4px;
+    width: 200px;
+  }
+  .body button {
+    height: 40px;
+    padding: 7px;
+    margin-top: 15px;
+    margin-bottom: 8px;
+  }
+
+  .body .convert-area {
+    padding: 20px;
+  }
+
+  .values h1 {
+    font-size: 42px;
+  }
+
+  .body-form label {
+    align-self: center;
+  }
+}
+
+@media (max-width: 565px) {
+  .navbar .nav-info li {
+    display: inline;
+    margin-left: 5px;
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 485px) {
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-around;
+  }
+
+  .navbar .container {
+    height: 150px;
+  }
+}
+
+.table {
+  background-color: #e7f4fe;
+  border-bottom: 5px solid #1e3b82;
+  white-space: nowrap;
+}
+
+.table table {
+  width: 100%;
+  text-align: center;
+  margin: 0px auto;
+}
